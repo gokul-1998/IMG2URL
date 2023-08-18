@@ -1,0 +1,26 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Hosting - Upload Result</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Hosting</h1>
+    <div class="container">
+        <p>Image successfully uploaded!</p>
+        <p>Image URL: <a href="{{ file_url }}" target="_blank">{{ file_url }}</a></p>
+        <img src="{{ file_url }}" alt="Uploaded Image">
+    </div>
+</body>
+</html>
